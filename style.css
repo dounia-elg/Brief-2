@@ -332,22 +332,32 @@ h2 {
 
 
 #menu {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 0;
     font-family: 'Poppins';
+    gap: 30px;
 }
 
 #menu li{
-    margin: 0 20px;
+    font-size: 24px;
 }
 
-
-#menu li a:hover,
-#menu li .active{
-    color: rgb(187, 115, 34);
+#menu a{
+    text-decoration: none;
+    color: #5D5D5D;
+    font-weight: bold;
+    position: relative;
 }
 
+#menu a:hover{
+    color: #933C24;
+}
+
+.active a {
+    color: #933C24;
+}
 
 
 .section-explore{
